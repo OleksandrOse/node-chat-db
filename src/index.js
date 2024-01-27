@@ -24,6 +24,9 @@ const io = new Server(server, {
   cors: {
     origin: process.env.CLIENT_URL,
     methods: ['GET', 'POST'],
+    // eslint-disable-next-line max-len
+    allowedHeaders: ['Content-Type', 'Origin', 'X-Requested-With', 'Accept', 'x-client-key', 'x-client-token', 'x-client-secret', 'Authorization'],
+    credentials: true,
   },
 });
 
