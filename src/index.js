@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 
 const io = new Server(server, {
   cors: {
-    origin: process.env.CLIENT_URL,
+    origin: 'https://oleksandrose.github.io/react-chat/',
     methods: ['GET', 'POST'],
   },
 });
